@@ -24,7 +24,7 @@ endpoint = {
     "public": "https://dms.%(region)s.%(domain)s/v1.0/%(project_id)s"
   },
   "DNS": {
-    "public": "https://dns.%(domain)s/v2"
+    "public": "https://dns.%(region)s.%(domain)s/v2"
   },
     "ECS": {
     "public": "https://ecs.%(region)s.%(domain)s/v1/%(project_id)s"
@@ -73,6 +73,9 @@ endpoint = {
   },
   "VOLUME_BACKUP": {
       "public": "https://vbs.%(region)s.%(domain)s/v2/%(project_id)s"
+  },
+  "VPC": {
+      "public": "https://vpc.%(region)s.%(domain)s/v1/%(project_id)s"
   },
   "VPCV2.0": {
        "public": "https://vpc.%(region)s.%(domain)s/v2.0/%(project_id)s"
