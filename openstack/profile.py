@@ -112,6 +112,7 @@ from openstack.rds import rds_service
 # from openstack.telemetry.alarm import alarm_service
 # from openstack.telemetry import telemetry_service
 # from openstack.workflow import workflow_service
+from openstack.iam import iam_service
 
 _logger = logging.getLogger(__name__)
 
@@ -177,6 +178,7 @@ class Profile(object):
 
         self._add_service(rds_service.RDSService(version="v1"))
         self._add_service(cdn_service.CDNService(version='v1'))
+        self._add_service(iam_service.IamService(version='v3.0'))
 
         # self._add_service(rds_os_service.RDSService(version="v1"))
         # self._add_service(telemetry_service.TelemetryService(version="v2"))
